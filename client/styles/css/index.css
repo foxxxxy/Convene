@@ -120,20 +120,20 @@ form .form-group input:-ms-input-placeholder {
   }
 }
 /* line 14, ../scss/components/_form.scss */
-form .form-group span .fa-question {
-  width: 16px;
-  color: #818181;
+form .form-group span .glyphicon-question-sign {
+  background-color: #818181;
+  color: #fff;
   border: 1px solid #d5d5d5;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
 /* line 20, ../scss/components/_form.scss */
-form .form-group span .fa-check-circle {
+form .form-group span .glyphicon-ok-sign {
   color: #a0d271;
 }
 /* line 23, ../scss/components/_form.scss */
-form .form-group span .fa-times-circle {
+form .form-group span .glyphicon-remove-sign {
   color: #ff5958;
 }
 /* line 29, ../scss/components/_form.scss */
@@ -900,7 +900,7 @@ footer .copyright {
     font-size: 28px;
   }
 }
-/* line 22, ../scss/layouts/_features.scss */
+/* line 23, ../scss/layouts/_features.scss */
 .homepage .features h3 {
   margin: 20px 0;
   font-family: "Helvetica", sans-serif;
@@ -909,12 +909,12 @@ footer .copyright {
   color: #fff;
 }
 @media (max-width: 767px) {
-  /* line 22, ../scss/layouts/_features.scss */
+  /* line 23, ../scss/layouts/_features.scss */
   .homepage .features h3 {
     font-size: 36px;
   }
 }
-/* line 33, ../scss/layouts/_features.scss */
+/* line 35, ../scss/layouts/_features.scss */
 .homepage .features p {
   padding: 0 17px;
   font-family: "Helvetica", sans-serif;
@@ -923,35 +923,35 @@ footer .copyright {
   line-height: 26px;
 }
 @media (max-width: 767px) {
-  /* line 33, ../scss/layouts/_features.scss */
+  /* line 35, ../scss/layouts/_features.scss */
   .homepage .features p {
     padding: 0 7px;
     font-size: 19px;
   }
 }
-/* line 45, ../scss/layouts/_features.scss */
+/* line 48, ../scss/layouts/_features.scss */
 .homepage .features .wrapper-ft {
   margin-top: 70px;
   margin-bottom: 170px;
 }
 @media (max-width: 767px) {
-  /* line 45, ../scss/layouts/_features.scss */
+  /* line 48, ../scss/layouts/_features.scss */
   .homepage .features .wrapper-ft {
     margin-top: 50px;
     margin-bottom: 45px;
   }
 }
-/* line 53, ../scss/layouts/_features.scss */
+/* line 57, ../scss/layouts/_features.scss */
 .homepage .features .wrapper-ft figure {
   text-align: center;
 }
 @media (max-width: 767px) {
-  /* line 53, ../scss/layouts/_features.scss */
+  /* line 57, ../scss/layouts/_features.scss */
   .homepage .features .wrapper-ft figure {
     margin-bottom: 60px;
   }
 }
-/* line 60, ../scss/layouts/_features.scss */
+/* line 65, ../scss/layouts/_features.scss */
 .homepage .features .wrapper-ft .clock {
   margin-top: 15px;
 }
