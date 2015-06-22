@@ -1,0 +1,31 @@
+footer {
+  font-size: 0;
+  background-color: #fcf7f4;
+  text-align: center;
+
+  .logo {
+    float: left;
+    display: inline-block;
+    line-height: 115px;
+    @include breakpoint(ex-small) {
+      padding-top: 35px;
+      float: none;
+      line-height: 90px;
+    }
+  }
+  .copyright {
+    float: right;
+    display: inline-block;
+    line-height: 115px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #494a4a;
+    @include text-shadow(0 1px 1px rgba(150, 150, 150, 0.50));
+    @include breakpoint(ex-small) {
+      float: none;
+      padding-bottom: 35px;
+      line-height: 90px;
+    }
+  }
+}
