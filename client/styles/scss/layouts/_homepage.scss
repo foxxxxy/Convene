@@ -1,8 +1,8 @@
-.homepage{
-  @import "advertising";
-  @import "monitor";
-  @import "features";
-  @import "tweets";
-  @import "about";
-  @include user-select(none);
+.homepage {
+    @import "advertising";
+    @import "monitor";
+    @import "features";
+    @import "tweets";
+    @import "about";
+    @include user-select(none);
 }

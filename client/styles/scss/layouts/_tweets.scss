@@ -1,106 +1,106 @@
 .tweets {
-  padding-top: 55px;
-  background-image: url("../../images/tweets/tweet-bg.png");
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  @include breakpoint(ex-small) {
-    padding-top: 100px;
-  }
-
-  figure {
-    text-align: center;
-    img {
-
+    padding-top: 55px;
+    background-image: url("../../images/tweets/tweet-bg.png");
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    @include breakpoint(ex-small) {
+        padding-top: 100px;
     }
-    figcaption {
-      h3 {
-        margin-top: 10px;
-        font-family: "Helvetica", sans-serif;
-        font-weight: 300;
-        font-size: 24px;
-        color: #fafbfc;
-        @include breakpoint(ex-small) {
-          font-size: 33px;
+
+    figure {
+        text-align: center;
+        img {
+
         }
-      }
-    }
-  }
-
-  p {
-    margin: 0;
-    line-height: 15px;
-    font-family: "Open Sans", sans-serif;
-    font-size: 13px;
-    color: #676767;
-    @include breakpoint(ex-small) {
-      font-size: 18px;
-      line-height: normal;
-    }
-  }
-
-  .tweets-wp {
-    margin-top: 30px;
-    margin-bottom: 60px;
-    @include breakpoint(ex-small) {
-      margin-top: 60px;
+        figcaption {
+            h3 {
+                margin-top: 10px;
+                font-family: "Helvetica", sans-serif;
+                font-weight: 300;
+                font-size: 24px;
+                color: #fafbfc;
+                @include breakpoint(ex-small) {
+                    font-size: 33px;
+                }
+            }
+        }
     }
 
-    .first-row {
-      margin-bottom: 30px;
-
-      .tweet:before {
-        content: "";
-        position: absolute;
-        right: 100%;
-        top: 26px;
-        width: 0;
-        height: 0;
-        border-top: 10px solid transparent;
-        border-right: 10px solid #f7f8f8;
-        border-bottom: 10px solid transparent;
-      }
+    p {
+        margin: 0;
+        line-height: 15px;
+        font-family: "Open Sans", sans-serif;
+        font-size: 13px;
+        color: #676767;
+        @include breakpoint(ex-small) {
+            font-size: 18px;
+            line-height: normal;
+        }
     }
 
-    .second-row {
-      .tweet:before {
-        content: "";
-        position: absolute;
-        left: 100%;
-        top: 26px;
-        width: 0;
-        height: 0;
-        border-top: 10px solid transparent;
-        border-left: 10px solid #f7f8f8;
-        border-bottom: 10px solid transparent;
-      }
-    }
-    .square {
-      background-color: #57baff;
-      height: 70px;
-      @include border-radius(3px);
-      @include box-shadow(inset 0px 2px 0px rgba(146, 210, 255, .35), 0 6px 4px -4px rgba(0, 0, 0, .35));
-    }
+    .tweets-wp {
+        margin-top: 30px;
+        margin-bottom: 60px;
+        @include breakpoint(ex-small) {
+            margin-top: 60px;
+        }
 
-    .tweet {
-      position: relative;
-      padding: 14px;
-      background-color: #f7f8f8;
-      height: auto;
-      min-height: 105px;
-      border: 1px solid #d4d4d4;
-      @include box-shadow(inset 0px 2px 0px rgba(255, 255, 255, .100), 0 6px 4px -4px rgba(0, 0, 0, .35));
-      @include border-radius(3px);
-      @include breakpoint(small) {
-        font-size: 15px;
-        margin-bottom: 35px;
-      }
-      @include breakpoint(ex-small) {
-        font-size: 15px;
-        margin-bottom: 35px;
-      }
+        .first-row {
+            margin-bottom: 30px;
+
+            .tweet:before {
+                content: "";
+                position: absolute;
+                right: 100%;
+                top: 26px;
+                width: 0;
+                height: 0;
+                border-top: 10px solid transparent;
+                border-right: 10px solid #f7f8f8;
+                border-bottom: 10px solid transparent;
+            }
+        }
+
+        .second-row {
+            .tweet:before {
+                content: "";
+                position: absolute;
+                left: 100%;
+                top: 26px;
+                width: 0;
+                height: 0;
+                border-top: 10px solid transparent;
+                border-left: 10px solid #f7f8f8;
+                border-bottom: 10px solid transparent;
+            }
+        }
+        .square {
+            background-color: #57baff;
+            height: 70px;
+            @include border-radius(3px);
+            @include box-shadow(inset 0px 2px 0px rgba(146, 210, 255, .35), 0 6px 4px -4px rgba(0, 0, 0, .35));
+        }
+
+        .tweet {
+            position: relative;
+            padding: 14px;
+            background-color: #f7f8f8;
+            height: auto;
+            min-height: 105px;
+            border: 1px solid #d4d4d4;
+            @include box-shadow(inset 0px 2px 0px rgba(255, 255, 255, .100), 0 6px 4px -4px rgba(0, 0, 0, .35));
+            @include border-radius(3px);
+            @include breakpoint(small) {
+                font-size: 15px;
+                margin-bottom: 35px;
+            }
+            @include breakpoint(ex-small) {
+                font-size: 15px;
+                margin-bottom: 35px;
+            }
+        }
     }
-  }
 }

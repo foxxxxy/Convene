@@ -1,98 +1,98 @@
 form {
-  margin: 30px 0;
-  background: none;
+    margin: 30px 0;
+    background: none;
 
-  .form-group {
-    input {
-      @include placeholder(13px, '"Open Sans", sans-serif', #061b2a);
-      @include breakpoint(ex-small) {
-        @include placeholder(15px, '"Open Sans", sans-serif', #061b2a);
-      }
-    }
-
-    span {
-      .fa-question {
-        width: 16px;
-        color: #818181;
-        border: 1px solid #d5d5d5;
-        @include border-radius(50%);
-      }
-      .fa-check-circle {
-        color: #a0d271;
-      }
-      .fa-times-circle {
-        color: #ff5958;
-      }
-    }
-  }
-
-  .form-inline {
-    text-align: left;
     .form-group {
-      &:last-child {
-        float: right;
-        @include breakpoint(ex-small) {
-          float: none;
+        input {
+            @include placeholder(13px, '"Open Sans", sans-serif', #061b2a);
+            @include breakpoint(ex-small) {
+                @include placeholder(15px, '"Open Sans", sans-serif', #061b2a);
+            }
         }
-      }
-      input {
-        @include placeholder(13px, '"Open Sans", sans-serif', #061b2a);
-        @include breakpoint(ex-small) {
-          @include placeholder(15px, '"Open Sans", sans-serif', #061b2a);
+
+        span {
+            .fa-question {
+                width: 16px;
+                color: #818181;
+                border: 1px solid #d5d5d5;
+                @include border-radius(50%);
+            }
+            .fa-check-circle {
+                color: #a0d271;
+            }
+            .fa-times-circle {
+                color: #ff5958;
+            }
         }
-      }
+    }
+
+    .form-inline {
+        text-align: left;
+        .form-group {
+            &:last-child {
+                float: right;
+                @include breakpoint(ex-small) {
+                    float: none;
+                }
+            }
+            input {
+                @include placeholder(13px, '"Open Sans", sans-serif', #061b2a);
+                @include breakpoint(ex-small) {
+                    @include placeholder(15px, '"Open Sans", sans-serif', #061b2a);
+                }
+            }
+
+        }
 
     }
 
-  }
+    .button-wrapper {
+        margin-top: 35px;
+        text-align: left;
 
-  .button-wrapper {
-    margin-top: 35px;
-    text-align: left;
+        button {
+            &:last-child {
+                float: right;
+            }
+        }
 
-    button {
-      &:last-child {
-        float: right;
-      }
+        .btn-default {
+            width: 120px;
+            line-height: 50px;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 600;
+            font-size: 15px;
+            color: #696a6a;
+            @include text-shadow(0 1px 1px rgba(150, 150, 150, 0.50));
+            @include filter-gradient(#ffffff, #000000, vertical);
+            @include background-image(linear-gradient(top, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%));
+            @include transition-property(all);
+            @include transition-duration(400ms);
+            @include breakpoint(ex-small) {
+                width: 150px;
+            }
+        }
+
     }
+    .bg-primary {
+        width: 245px;
+        line-height: 48px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        color: #fefefe;
+        border: solid 1px #287fbe;
+        @include box-shadow(inset 0px 2px 0px rgba(143, 198, 239, .35));
+        @include text-shadow(0 1px 1px rgba(150, 150, 150, 0.50));
+        @include transition-property(all);
+        @include transition-duration(400ms);
+        @include breakpoint(ex-small) {
+            width: 150px;
+        }
 
-    .btn-default {
-      width: 120px;
-      line-height: 50px;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 600;
-      font-size: 15px;
-      color: #696a6a;
-      @include text-shadow(0 1px 1px rgba(150, 150, 150, 0.50));
-      @include filter-gradient(#ffffff, #000000, vertical);
-      @include background-image(linear-gradient(top, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%));
-      @include transition-property(all);
-      @include transition-duration(400ms);
-      @include breakpoint(ex-small) {
-        width: 150px;
-      }
+        &:hover {
+            background: #2996d9;
+            color: #fefefe;
+        }
     }
-
-  }
-  .bg-primary {
-    width: 245px;
-    line-height: 48px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
-    font-size: 15px;
-    color: #fefefe;
-    border: solid 1px #287fbe;
-    @include box-shadow(inset 0px 2px 0px rgba(143, 198, 239, .35));
-    @include text-shadow(0 1px 1px rgba(150, 150, 150, 0.50));
-    @include transition-property(all);
-    @include transition-duration(400ms);
-    @include breakpoint(ex-small) {
-      width: 150px;
-    }
-
-    &:hover {
-      background: #2996d9;
-      color: #fefefe;
-    }
-  }
 }

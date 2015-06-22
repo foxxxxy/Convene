@@ -1,118 +1,118 @@
 header {
-  padding: 15px 0 10px;
-  @include breakpoint(ex-small) {
-    padding: 0;
-    background-color: #fff;
-  }
+    padding: 15px 0 10px;
+    @include breakpoint(ex-small) {
+        padding: 0;
+        background-color: #fff;
+    }
 ;
 
-  .navbar-default {
-    background-color: #fff;
-    border: none;
-    @include breakpoint(ex-small) {
-      margin: 0;
-    }
-
-    .navbar-header {
-
-      .navbar-toggle {
+    .navbar-default {
+        background-color: #fff;
         border: none;
-        margin: 0;
-        padding: 9px 31px;
-        height: 70px;
-        width: 102px;
-        @include border-radius(0);
-        @include transition-property(all);
-        @include transition-duration(400ms);
-        @include breakpoint(v-ex-small) {
-          width: 62px;
-          padding: 9px 12px;
-        }
-
-        &:hover {
-          background-color: #57baff;
-        }
-
-        &:focus {
-          background-color: #57baff;
-          .icon-bar {
-            background-color: #fff;
-          }
-        }
-
-        .icon-bar {
-          text-align: center;
-          height: 6px;
-          width: 37px;
-          margin-top: 5px;
-          background-color: #d2d4d4;
-          @include border-radius(5px);
-        }
-      }
-
-      .navbar-brand {
-        height: auto;
-        padding-top: 13px;
         @include breakpoint(ex-small) {
-          padding: 13px 0 0 0;
-        }
-      ;
-
-      }
-    }
-    .navbar-collapse {
-      border: none;
-      @include breakpoint(ex-small) {
-        position: absolute;
-        z-index: 10;
-        width: 92%;
-      }
-
-      .navbar-right {
-        @include breakpoint(ex-small) {
-          margin-top: 0;
+            margin: 0;
         }
 
-        li {
-          padding: 15px;
-          font-family: "Open Sans", sans-serif;
-          font-weight: 600;
-          font-size: 13px;
+        .navbar-header {
 
-          @include breakpoint(ex-small) {
-            background-color: #57baff;
-            border-bottom: 4px solid #53b1f2;
-          }
+            .navbar-toggle {
+                border: none;
+                margin: 0;
+                padding: 9px 31px;
+                height: 70px;
+                width: 102px;
+                @include border-radius(0);
+                @include transition-property(all);
+                @include transition-duration(400ms);
+                @include breakpoint(v-ex-small) {
+                    width: 62px;
+                    padding: 9px 12px;
+                }
 
-          &:last-child {
-            a {
-              padding-right: 0;
+                &:hover {
+                    background-color: #57baff;
+                }
+
+                &:focus {
+                    background-color: #57baff;
+                    .icon-bar {
+                        background-color: #fff;
+                    }
+                }
+
+                .icon-bar {
+                    text-align: center;
+                    height: 6px;
+                    width: 37px;
+                    margin-top: 5px;
+                    background-color: #d2d4d4;
+                    @include border-radius(5px);
+                }
             }
-          }
 
-          a {
-            padding: 0;
-            line-height: 40px;
-            color: #061b2a;
-            text-decoration: none;
-            @include transition-property(all);
-            @include transition-duration(400ms);
+            .navbar-brand {
+                height: auto;
+                padding-top: 13px;
+                @include breakpoint(ex-small) {
+                    padding: 13px 0 0 0;
+                }
+            ;
+
+            }
+        }
+        .navbar-collapse {
+            border: none;
             @include breakpoint(ex-small) {
-              font-family: "Helvetica", sans-serif;
-              font-weight: 300;
-              font-size: 40px;
-              line-height: 115px;
-              text-align: center;
-              color: #fcf7f4;
+                position: absolute;
+                z-index: 10;
+                width: 92%;
             }
-          ;
 
-            &:hover {
-              color: rgba(6, 27, 42, 0.5);
+            .navbar-right {
+                @include breakpoint(ex-small) {
+                    margin-top: 0;
+                }
+
+                li {
+                    padding: 15px;
+                    font-family: "Open Sans", sans-serif;
+                    font-weight: 600;
+                    font-size: 13px;
+
+                    @include breakpoint(ex-small) {
+                        background-color: #57baff;
+                        border-bottom: 4px solid #53b1f2;
+                    }
+
+                    &:last-child {
+                        a {
+                            padding-right: 0;
+                        }
+                    }
+
+                    a {
+                        padding: 0;
+                        line-height: 40px;
+                        color: #061b2a;
+                        text-decoration: none;
+                        @include transition-property(all);
+                        @include transition-duration(400ms);
+                        @include breakpoint(ex-small) {
+                            font-family: "Helvetica", sans-serif;
+                            font-weight: 300;
+                            font-size: 40px;
+                            line-height: 115px;
+                            text-align: center;
+                            color: #fcf7f4;
+                        }
+                    ;
+
+                        &:hover {
+                            color: rgba(6, 27, 42, 0.5);
+                        }
+                    }
+                }
             }
-          }
         }
-      }
     }
-  }
 }
