@@ -93,6 +93,10 @@
       border: 1px solid #d4d4d4;
       @include box-shadow(inset 0px 2px 0px rgba(255, 255, 255, .100), 0 6px 4px -4px rgba(0, 0, 0, .35));
       @include border-radius(3px);
+      @include breakpoint(small) {
+        font-size: 15px;
+        margin-bottom: 35px;
+      }
       @include breakpoint(ex-small) {
         font-size: 15px;
         margin-bottom: 35px;

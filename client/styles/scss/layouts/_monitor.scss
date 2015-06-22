@@ -1,27 +1,22 @@
-.monitor{
+.monitor {
   padding-top: 55px;
   @include breakpoint(ex-small) {
     padding-top: 35px;
     background-color: #f5f4f4;
   }
-;
 
   .monitor-bg {
     height: 295px;
+    @include breakpoint(small) {
+      height: 219px;
+    }
+    @include breakpoint(ex-small) {
+      height: 105px;
+    }
 
-    .image {
-      background-image: url("../../images/monitor/monitor.png");
-      overflow: hidden;
+    img {
       width: 100%;
       height: 100%;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-
-      @include breakpoint(ex-small) {
-        background-size: contain;
-      }
-    ;
     }
   }
 }

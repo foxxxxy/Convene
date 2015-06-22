@@ -350,12 +350,20 @@ header .navbar-default .navbar-collapse {
   border: none;
 }
 @media (max-width: 767px) {
-  /* line 66, ../scss/widgets/_header.scss */
+  /* line 63, ../scss/widgets/_header.scss */
+  header .navbar-default .navbar-collapse {
+    position: absolute;
+    z-index: 10;
+    width: 92%;
+  }
+}
+@media (max-width: 767px) {
+  /* line 71, ../scss/widgets/_header.scss */
   header .navbar-default .navbar-collapse .navbar-right {
     margin-top: 0;
   }
 }
-/* line 72, ../scss/widgets/_header.scss */
+/* line 76, ../scss/widgets/_header.scss */
 header .navbar-default .navbar-collapse .navbar-right li {
   padding: 15px;
   font-family: "Open Sans", sans-serif;
@@ -363,17 +371,17 @@ header .navbar-default .navbar-collapse .navbar-right li {
   font-size: 13px;
 }
 @media (max-width: 767px) {
-  /* line 72, ../scss/widgets/_header.scss */
+  /* line 76, ../scss/widgets/_header.scss */
   header .navbar-default .navbar-collapse .navbar-right li {
     background-color: #57baff;
     border-bottom: 4px solid #53b1f2;
   }
 }
-/* line 84, ../scss/widgets/_header.scss */
+/* line 88, ../scss/widgets/_header.scss */
 header .navbar-default .navbar-collapse .navbar-right li:last-child a {
   padding-right: 0;
 }
-/* line 89, ../scss/widgets/_header.scss */
+/* line 93, ../scss/widgets/_header.scss */
 header .navbar-default .navbar-collapse .navbar-right li a {
   padding: 0;
   line-height: 40px;
@@ -389,7 +397,7 @@ header .navbar-default .navbar-collapse .navbar-right li a {
   transition-duration: 400ms;
 }
 @media (max-width: 767px) {
-  /* line 89, ../scss/widgets/_header.scss */
+  /* line 93, ../scss/widgets/_header.scss */
   header .navbar-default .navbar-collapse .navbar-right li a {
     font-family: "Helvetica", sans-serif;
     font-weight: 300;
@@ -399,7 +407,7 @@ header .navbar-default .navbar-collapse .navbar-right li a {
     color: #fcf7f4;
   }
 }
-/* line 106, ../scss/widgets/_header.scss */
+/* line 110, ../scss/widgets/_header.scss */
 header .navbar-default .navbar-collapse .navbar-right li a:hover {
   color: rgba(6, 27, 42, 0.5);
 }
@@ -469,6 +477,7 @@ footer .copyright {
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 7, ../scss/layouts/_advertising.scss */
   .homepage .advertising h1 {
+    text-align: center;
     font-size: 38px;
   }
 }
@@ -482,21 +491,27 @@ footer .copyright {
     text-align: center;
   }
 }
-/* line 24, ../scss/layouts/_advertising.scss */
+/* line 25, ../scss/layouts/_advertising.scss */
 .homepage .advertising h1 .uniform-bg {
   background: #1769a4;
   position: relative;
   outline: #1769a4 solid 0.2em;
 }
-/* line 29, ../scss/layouts/_advertising.scss */
+/* line 30, ../scss/layouts/_advertising.scss */
 .homepage .advertising h1 .uniform-bg span {
   position: relative;
 }
-/* line 35, ../scss/layouts/_advertising.scss */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 35, ../scss/layouts/_advertising.scss */
+  .homepage .advertising .login-buttons {
+    margin-top: 30px;
+  }
+}
+/* line 40, ../scss/layouts/_advertising.scss */
 .homepage .advertising .login-buttons ul {
   font-size: 0;
 }
-/* line 37, ../scss/layouts/_advertising.scss */
+/* line 42, ../scss/layouts/_advertising.scss */
 .homepage .advertising .login-buttons ul li {
   margin-bottom: 12px;
   font-family: "Open Sans", sans-serif;
@@ -505,7 +520,7 @@ footer .copyright {
   text-align: center;
   color: #55a4da;
 }
-/* line 45, ../scss/layouts/_advertising.scss */
+/* line 50, ../scss/layouts/_advertising.scss */
 .homepage .advertising .login-buttons ul li .button {
   position: relative;
   color: #494a4a;
@@ -541,11 +556,11 @@ footer .copyright {
   -webkit-transition-duration: 400ms;
   transition-duration: 400ms;
 }
-/* line 65, ../scss/layouts/_advertising.scss */
+/* line 69, ../scss/layouts/_advertising.scss */
 .homepage .advertising .login-buttons ul li .button:hover {
   background: rgba(23, 105, 164, 0.25);
 }
-/* line 70, ../scss/layouts/_advertising.scss */
+/* line 74, ../scss/layouts/_advertising.scss */
 .homepage .advertising .login-buttons ul li .twitter::before {
   top: 0;
   left: 0;
@@ -566,7 +581,7 @@ footer .copyright {
   box-shadow: inset 0px 2px 0px rgba(42, 183, 236, 0.35), 0px 2px 0px rgba(42, 183, 236, 0.35);
 }
 @media (max-width: 767px) {
-  /* line 70, ../scss/layouts/_advertising.scss */
+  /* line 74, ../scss/layouts/_advertising.scss */
   .homepage .advertising .login-buttons ul li .twitter::before {
     background: #00659b url("../../images/advertising/in.png") no-repeat center;
     background-size: 25px 25px;
@@ -577,12 +592,12 @@ footer .copyright {
   }
 }
 @media (max-width: 320px) {
-  /* line 70, ../scss/layouts/_advertising.scss */
+  /* line 74, ../scss/layouts/_advertising.scss */
   .homepage .advertising .login-buttons ul li .twitter::before {
     width: 38px;
   }
 }
-/* line 95, ../scss/layouts/_advertising.scss */
+/* line 99, ../scss/layouts/_advertising.scss */
 .homepage .advertising .login-buttons ul li .twitter::after {
   top: 0;
   left: 0;
@@ -598,7 +613,7 @@ footer .copyright {
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
 }
-/* line 106, ../scss/layouts/_advertising.scss */
+/* line 110, ../scss/layouts/_advertising.scss */
 .homepage .advertising .login-buttons ul li .facebook::before {
   top: 0;
   left: 0;
@@ -619,12 +634,12 @@ footer .copyright {
   box-shadow: inset 0px 2px 0px rgba(131, 148, 187, 0.35), 0px 2px 0px rgba(131, 148, 187, 0.35);
 }
 @media (max-width: 320px) {
-  /* line 106, ../scss/layouts/_advertising.scss */
+  /* line 110, ../scss/layouts/_advertising.scss */
   .homepage .advertising .login-buttons ul li .facebook::before {
     width: 38px;
   }
 }
-/* line 123, ../scss/layouts/_advertising.scss */
+/* line 127, ../scss/layouts/_advertising.scss */
 .homepage .advertising .login-buttons ul li .facebook::after {
   top: 0;
   left: 0;
@@ -640,7 +655,7 @@ footer .copyright {
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
 }
-/* line 134, ../scss/layouts/_advertising.scss */
+/* line 138, ../scss/layouts/_advertising.scss */
 .homepage .advertising .login-buttons ul li .google::before {
   top: 0;
   left: 0;
@@ -661,12 +676,12 @@ footer .copyright {
   box-shadow: inset 0px 2px 0px rgba(226, 145, 133, 0.35), 0px 2px 0px rgba(226, 145, 133, 0.35);
 }
 @media (max-width: 320px) {
-  /* line 134, ../scss/layouts/_advertising.scss */
+  /* line 138, ../scss/layouts/_advertising.scss */
   .homepage .advertising .login-buttons ul li .google::before {
     width: 38px;
   }
 }
-/* line 152, ../scss/layouts/_advertising.scss */
+/* line 156, ../scss/layouts/_advertising.scss */
 .homepage .advertising .login-buttons ul li .google::after {
   top: 0;
   left: 0;
@@ -682,7 +697,7 @@ footer .copyright {
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
 }
-/* line 163, ../scss/layouts/_advertising.scss */
+/* line 167, ../scss/layouts/_advertising.scss */
 .homepage .advertising .login-buttons ul li .e-mail::before {
   top: 0;
   left: 0;
@@ -703,12 +718,12 @@ footer .copyright {
   box-shadow: inset 0px 2px 0px rgba(131, 194, 238, 0.35), 0px 2px 0px rgba(131, 194, 238, 0.35);
 }
 @media (max-width: 320px) {
-  /* line 163, ../scss/layouts/_advertising.scss */
+  /* line 167, ../scss/layouts/_advertising.scss */
   .homepage .advertising .login-buttons ul li .e-mail::before {
     width: 38px;
   }
 }
-/* line 180, ../scss/layouts/_advertising.scss */
+/* line 184, ../scss/layouts/_advertising.scss */
 .homepage .advertising .login-buttons ul li .e-mail::after {
   top: 0;
   left: 0;
@@ -724,18 +739,18 @@ footer .copyright {
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
 }
-/* line 191, ../scss/layouts/_advertising.scss */
+/* line 195, ../scss/layouts/_advertising.scss */
 .homepage .advertising .login-buttons ul .line {
   position: relative;
 }
-/* line 194, ../scss/layouts/_advertising.scss */
+/* line 198, ../scss/layouts/_advertising.scss */
 .homepage .advertising .login-buttons ul .line::before {
   position: absolute;
   content: '- - - - - - - - - - - - - -';
   color: #f3f2ee;
   display: block;
 }
-/* line 201, ../scss/layouts/_advertising.scss */
+/* line 205, ../scss/layouts/_advertising.scss */
 .homepage .advertising .login-buttons ul .line::after {
   top: 0;
   right: 0;
@@ -744,11 +759,11 @@ footer .copyright {
   color: #f3f2ee;
   display: block;
 }
-/* line 212, ../scss/layouts/_advertising.scss */
+/* line 216, ../scss/layouts/_advertising.scss */
 .homepage .advertising .nav-tabs {
   padding-top: 15px;
 }
-/* line 215, ../scss/layouts/_advertising.scss */
+/* line 219, ../scss/layouts/_advertising.scss */
 .homepage .advertising .nav-tabs li {
   width: 250px;
   text-align: center;
@@ -757,12 +772,12 @@ footer .copyright {
   box-shadow: inset 0px 2px 0px rgba(255, 255, 255, 0.35);
 }
 @media (max-width: 767px) {
-  /* line 215, ../scss/layouts/_advertising.scss */
+  /* line 219, ../scss/layouts/_advertising.scss */
   .homepage .advertising .nav-tabs li {
     width: 156px;
   }
 }
-/* line 223, ../scss/layouts/_advertising.scss */
+/* line 227, ../scss/layouts/_advertising.scss */
 .homepage .advertising .nav-tabs li a {
   border: solid 1px #d4d4d4;
   line-height: 37px;
@@ -779,19 +794,19 @@ footer .copyright {
   box-shadow: inset 0px 2px 0px rgba(255, 255, 255, 0.35);
 }
 @media (max-width: 767px) {
-  /* line 223, ../scss/layouts/_advertising.scss */
+  /* line 227, ../scss/layouts/_advertising.scss */
   .homepage .advertising .nav-tabs li a {
     width: 156px;
     line-height: 27px;
   }
 }
-/* line 241, ../scss/layouts/_advertising.scss */
+/* line 245, ../scss/layouts/_advertising.scss */
 .homepage .advertising .nav-tabs .first a {
   -moz-border-radius: 5px 0 0 0;
   -webkit-border-radius: 5px;
   border-radius: 5px 0 0 0;
 }
-/* line 248, ../scss/layouts/_advertising.scss */
+/* line 252, ../scss/layouts/_advertising.scss */
 .homepage .advertising .nav-tabs .active a {
   border: solid 1px #287fbe;
   color: #fff;
@@ -800,26 +815,33 @@ footer .copyright {
   -webkit-box-shadow: inset 0px 2px 0px rgba(143, 198, 239, 0.35);
   box-shadow: inset 0px 2px 0px rgba(143, 198, 239, 0.35);
 }
-/* line 257, ../scss/layouts/_advertising.scss */
+/* line 261, ../scss/layouts/_advertising.scss */
 .homepage .advertising form {
   width: 500px;
 }
 @media (max-width: 767px) {
-  /* line 257, ../scss/layouts/_advertising.scss */
+  /* line 261, ../scss/layouts/_advertising.scss */
   .homepage .advertising form {
     width: 312px;
   }
 }
-/* line 263, ../scss/layouts/_advertising.scss */
+/* line 267, ../scss/layouts/_advertising.scss */
 .homepage .advertising .collapse {
   text-align: center;
 }
-/* line 265, ../scss/layouts/_advertising.scss */
+/* line 269, ../scss/layouts/_advertising.scss */
 .homepage .advertising .collapse .well {
   display: inline-block;
   background: none;
   border: none;
   text-align: center;
+}
+/* line 276, ../scss/layouts/_advertising.scss */
+.homepage .advertising .popover {
+  width: 170px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  color: #676767;
 }
 /* line 1, ../scss/layouts/_monitor.scss */
 .homepage .monitor {
@@ -832,25 +854,26 @@ footer .copyright {
     background-color: #f5f4f4;
   }
 }
-/* line 9, ../scss/layouts/_monitor.scss */
+/* line 8, ../scss/layouts/_monitor.scss */
 .homepage .monitor .monitor-bg {
   height: 295px;
 }
-/* line 12, ../scss/layouts/_monitor.scss */
-.homepage .monitor .monitor-bg .image {
-  background-image: url("../../images/monitor/monitor.png");
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 8, ../scss/layouts/_monitor.scss */
+  .homepage .monitor .monitor-bg {
+    height: 219px;
+  }
 }
 @media (max-width: 767px) {
-  /* line 12, ../scss/layouts/_monitor.scss */
-  .homepage .monitor .monitor-bg .image {
-    background-size: contain;
+  /* line 8, ../scss/layouts/_monitor.scss */
+  .homepage .monitor .monitor-bg {
+    height: 105px;
   }
+}
+/* line 17, ../scss/layouts/_monitor.scss */
+.homepage .monitor .monitor-bg img {
+  width: 100%;
+  height: 100%;
 }
 /* line 1, ../scss/layouts/_features.scss */
 .homepage .features {
@@ -1046,6 +1069,13 @@ footer .copyright {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 87, ../scss/layouts/_tweets.scss */
+  .homepage .tweets .tweets-wp .tweet {
+    font-size: 15px;
+    margin-bottom: 35px;
+  }
+}
 @media (max-width: 767px) {
   /* line 87, ../scss/layouts/_tweets.scss */
   .homepage .tweets .tweets-wp .tweet {
@@ -1065,6 +1095,12 @@ footer .copyright {
   color: #dafbfc;
   line-height: 105px;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 4, ../scss/layouts/_about.scss */
+  .homepage .about h3 {
+    text-align: center;
+  }
+}
 @media (max-width: 767px) {
   /* line 4, ../scss/layouts/_about.scss */
   .homepage .about h3 {
@@ -1074,27 +1110,27 @@ footer .copyright {
     line-height: 1.1;
   }
 }
-/* line 18, ../scss/layouts/_about.scss */
+/* line 21, ../scss/layouts/_about.scss */
 .homepage .about .row-about {
   font-size: 0;
 }
-/* line 21, ../scss/layouts/_about.scss */
+/* line 24, ../scss/layouts/_about.scss */
 .homepage .about .row-about div {
   display: inline-block;
 }
-/* line 25, ../scss/layouts/_about.scss */
+/* line 28, ../scss/layouts/_about.scss */
 .homepage .about .row-about .figure {
   margin: 0;
   height: 20px;
   line-height: 155px;
 }
-/* line 31, ../scss/layouts/_about.scss */
+/* line 34, ../scss/layouts/_about.scss */
 .homepage .about .row-about .button-flt {
   float: right;
   line-height: 135px;
   margin-bottom: 20px;
 }
-/* line 36, ../scss/layouts/_about.scss */
+/* line 39, ../scss/layouts/_about.scss */
 .homepage .about .row-about .button-flt .button {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
@@ -1133,7 +1169,7 @@ footer .copyright {
   -webkit-transition-duration: 400ms;
   transition-duration: 400ms;
 }
-/* line 58, ../scss/layouts/_about.scss */
+/* line 61, ../scss/layouts/_about.scss */
 .homepage .about .row-about .button-flt .button:hover {
   background: rgba(218, 251, 252, 0.6);
 }

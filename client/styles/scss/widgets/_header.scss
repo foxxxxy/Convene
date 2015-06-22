@@ -24,18 +24,18 @@ header {
         @include border-radius(0);
         @include transition-property(all);
         @include transition-duration(400ms);
-        @include breakpoint(v-ex-small){
+        @include breakpoint(v-ex-small) {
           width: 62px;
           padding: 9px 12px;
-        };
+        }
 
         &:hover {
           background-color: #57baff;
         }
 
-        &:focus{
+        &:focus {
           background-color: #57baff;
-          .icon-bar{
+          .icon-bar {
             background-color: #fff;
           }
         }
@@ -62,12 +62,16 @@ header {
     }
     .navbar-collapse {
       border: none;
+      @include breakpoint(ex-small) {
+        position: absolute;
+        z-index: 10;
+        width: 92%;
+      }
 
       .navbar-right {
         @include breakpoint(ex-small) {
           margin-top: 0;
         }
-      ;
 
         li {
           padding: 15px;
@@ -78,7 +82,7 @@ header {
           @include breakpoint(ex-small) {
             background-color: #57baff;
             border-bottom: 4px solid #53b1f2;
-          };
+          }
 
           &:last-child {
             a {
