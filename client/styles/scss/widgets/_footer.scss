@@ -5,9 +5,13 @@ footer {
 
     .logo {
         float: left;
-        display: inline-block;
         line-height: 115px;
         @include breakpoint(ex-small) {
+            padding-top: 35px;
+            float: none;
+            line-height: 90px;
+        }
+        @include breakpoint(small) {
             padding-top: 35px;
             float: none;
             line-height: 90px;
@@ -25,6 +29,11 @@ footer {
         @include breakpoint(ex-small) {
             float: none;
             padding-bottom: 35px;
+            line-height: 90px;
+        }
+        @include breakpoint(small) {
+            padding-bottom: 35px;
+            float: none;
             line-height: 90px;
         }
     }

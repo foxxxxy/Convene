@@ -57,6 +57,9 @@
                 @include box-shadow(0 6px 4px -4px rgba(0, 0, 0, .35));
                 @include transition-property(all);
                 @include transition-duration(400ms);
+                @include breakpoint(small){
+                    line-height: 65px;
+                }
 
                 &:hover {
                     background: rgba(218, 251, 252, 0.6);
